@@ -1,0 +1,98 @@
+* {
+    font-family: 'Optima', serif;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.register-form
+{
+    max-width:500px;
+    margin: 2rem auto;
+    border: 2px solid #ffffff;
+    padding:2rem;
+}
+
+#imglabel{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width: 9em;
+    padding-top: 15px;
+}
+
+label{
+    display:block;
+    padding-top: 15px;
+}
+
+h2{
+    display:block;
+    padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    color:red
+}
+
+#table-div{
+    padding-top: 15px;
+}
+
+.resize {
+    border: 2px solid #282c34;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+table {
+    margin: 0 auto !important; /* or margin: 0 auto 0 auto */
+}
+
+html, body {
+    margin: 0; height: 100%;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: orange;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid orange;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid orange;
+}
+
+.page-btn{
+    border: 2px solid #282c34;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}

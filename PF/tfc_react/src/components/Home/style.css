@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mainpage {
+    width: 50%;
+}
+
+.search {
+    margin-left: 0% !important;
+}

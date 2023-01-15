@@ -1,0 +1,49 @@
+* {
+    font-family: 'Optima', serif;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.wrapper
+{
+    max-width:500px;
+    margin: 2rem auto;
+    border: 2px solid #ffffff;
+    padding:2rem;
+}
+
+label{
+    display:block;
+    padding-top: 15px;
+}
+h3{
+    color:red
+}
+
+
+#cnum{
+    display:block;
+    width: 100%;
+
+}
+
+#cexp{
+    display:block;
+}
+
+#ccode{
+    display:block;
+}
+
+button{
+    display:block;
+    padding:.5rem;
+    margin: 50px;
+}
+
+#frm
+{
+    margin: auto;
+}

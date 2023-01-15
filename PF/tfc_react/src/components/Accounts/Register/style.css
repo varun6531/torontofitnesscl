@@ -1,0 +1,67 @@
+* {
+    font-family: 'Optima', serif;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.register-form
+{
+    max-width:500px;
+    margin: 2rem auto;
+    border: 2px solid #ffffff;
+    padding:2rem;
+}
+
+#imglabel{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width: 9em;
+    padding-top: 15px;
+}
+
+label{
+    display:block;
+    padding-top: 15px;
+}
+
+h2{
+    display:block;
+    padding-left: 15px;
+}
+
+h3{
+    color:red
+}
+
+.resize {
+    border: 2px solid #282c34;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+input{
+    display:block;
+    width: 100%;
+
+}
+
+button{
+    display:block;
+    padding:.5rem;
+    margin: 50px;
+}
+
+.link-btn{
+    display:block;
+    align-content: center;
+}
+
+#frm
+{
+    margin: auto;
+}

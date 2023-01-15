@@ -1,0 +1,50 @@
+* {
+    font-family: 'Optima', serif;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.login-form
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+label{
+    display:block;
+    padding-top: 15px;
+}
+
+h2{
+    display:block;
+    padding-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    color:red
+}
+
+
+input{
+    display:block;
+    width: 100%;
+
+}
+
+.auth-form-container{
+    display:block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#frm
+{
+    margin: auto;
+}

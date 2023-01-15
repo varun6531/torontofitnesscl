@@ -1,0 +1,10 @@
+.imgs {
+    display: block;
+    max-width:400px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    border:5px solid orange;
+    padding:3px;
+    margin:5px;
+}

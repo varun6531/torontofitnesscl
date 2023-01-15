@@ -1,0 +1,14 @@
+import logo from './logo.svg';
+import './App.css';
+import Studios from "./components/Studios";
+import GoogleMaps from "./components/GoogleMaps";
+import Router from "./components/Routers";
+import SearchBar from "./components/SearchBar"
+
+function App() {
+  return (
+      <Router />
+  )
+}
+
+export default App;
