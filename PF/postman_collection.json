@@ -1,0 +1,1585 @@
+{
+	"info": {
+		"_postman_id": "6d6ea790-bfac-491b-8c30-c816535d467f",
+		"name": "postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24151487"
+	},
+	"item": [
+		{
+			"name": "accounts/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/token/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/login/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/logout/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/logout/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/edit-profile/ [PUT]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444dup",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Jamesdup",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Johnsondup",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/edit-profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"edit-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/edit-profile/ [PATCH]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "james4444",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683007",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/edit-profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"edit-profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/subscribe/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/subscribe/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"subscribe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/create-credit-card/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "cc_number",
+							"value": "0000000000000000",
+							"type": "text"
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2024-08-29",
+							"type": "text"
+						},
+						{
+							"key": "cc_code",
+							"value": "132",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/create-credit-card/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"create-credit-card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/edit-credit-card/ [PUT]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "cc_number",
+							"value": "44444444444444444",
+							"type": "text"
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2024-08-29",
+							"type": "text"
+						},
+						{
+							"key": "cc_code",
+							"value": "132",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/edit-credit-card/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"edit-credit-card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/edit-credit-card/ [PUT] Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "cc_number",
+							"value": "0000000000000000",
+							"type": "text"
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2024-08-29",
+							"type": "text"
+						},
+						{
+							"key": "cc_code",
+							"value": "134",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/edit-credit-card/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"edit-credit-card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/payment-history/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/payment-history/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"payment-history",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/future-payments/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/future-payments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"future-payments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/edit-subscription/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/edit-subscription/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"edit-subscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/cancel-subscription/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/cancel-subscription/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"cancel-subscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriptions/record-payments/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "james@jam.com",
+							"type": "text"
+						},
+						{
+							"key": "plan_number",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "James",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "last_name",
+							"value": "Johnson",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "4372683009",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscriptions/record-payments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscriptions",
+						"record-payments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/distance/M1L4R9/calculate/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/distance/M1L4R9/calculate/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"distance",
+						"M1L4R9",
+						"calculate",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/1/43.887501,-79.428406/information/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/1/43.887501,-79.428406/information/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"1",
+						"43.887501,-79.428406",
+						"information",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/studio_name/tfc",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/studio_name/tfc/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"studio_name",
+						"tfc",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/amenity/pool/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/amenity/pool/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"amenity",
+						"pool",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/class_name/dance/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/class_name/dance/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"class_name",
+						"dance",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/coach_name/bob/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/coach_name/bob/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"coach_name",
+						"bob",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/classes/class_name/dance/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/classes/class_name/dance/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"classes",
+						"class_name",
+						"dance",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/classes/coach_name/bob/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/classes/coach_name/bob/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"classes",
+						"coach_name",
+						"bob",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/classes/date/2022-11-18/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/classes/date/2022-11-18/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"classes",
+						"date",
+						"2022-11-18",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search/classes/time/00:00:00 18:00:00/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/search/classes/time/00:00:00 18:00:00/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"classes",
+						"time",
+						"00:00:00 18:00:00",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/enrol/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/enrol/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"enrol",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/drop/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/drop/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"drop",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/enrol-all/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/enrol-all/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"enrol-all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/drop-all/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/drop-all/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"drop-all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/all-classes/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/all-classes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"all-classes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/view-classes/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/view-classes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"view-classes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "classes/1/recurring-class/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/classes/1/recurring-class/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"classes",
+						"1",
+						"recurring-class",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
